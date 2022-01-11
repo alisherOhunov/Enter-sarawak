@@ -196,6 +196,7 @@ export default {
       this.validateFullName()
       this.$refs.form.validate()
       if (this.formValid) {
+        console.log(this.form)
         this.$emit("submitted", this.form)
       } else {
         this.$store.state.stepper = 1
